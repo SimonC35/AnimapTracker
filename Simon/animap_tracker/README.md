@@ -1,16 +1,60 @@
-# Animap Tracker
+# Animap Tracker — Application mobile Flutter
 
-A new Flutter project.
+> Projet de fin d'étude — BTS CIEL (Cybersécurité, Informatique et réseaux, ELectronique)
 
-## Getting Started
+Application mobile de suivi GPS d'animaux en temps réel, développée avec Flutter. Elle constitue la partie interface utilisateur principale du projet Animap Tracker.
 
-This project is a starting point for a Flutter application.
+## Fonctionnalités
 
-A few resources to get you started if this is your first Flutter project:
+- Affichage en temps réel des positions GPS des animaux sur une carte OpenStreetMap
+- Historique des déplacements par animal
+- Système d'alertes
+- Gestion de compte utilisateur (inscription / connexion JWT)
+- Disponible en **français**, **anglais** et **breton**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Prérequis
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter 3.0+
+- Dart 3.0+
+- Un émulateur Android/iOS ou un appareil physique connecté
+
+## Installation et lancement
+
+```bash
+# Installer les dépendances
+flutter pub get
+
+# Lancer en mode développement
+flutter run
+
+# Compiler un APK Android (release)
+flutter build apk --release
+
+# Compiler pour iOS (macOS requis)
+flutter build ios --release
+```
+
+## Structure
+
+```
+lib/
+├── main.dart          # Point d'entrée + navigation principale
+├── pages/             # Écrans de l'application
+│   ├── home.dart
+│   ├── map.dart       # Carte interactive (flutter_map + OpenStreetMap)
+│   ├── list.dart      # Liste des animaux suivis
+│   ├── alert.dart     # Alertes
+│   ├── account.dart   # Gestion du compte
+│   └── login.dart     # Authentification
+└── l10n/              # Fichiers de traduction (FR, EN, Breton)
+```
+
+## Dépendances principales
+
+| Package | Rôle |
+|---|---|
+| `flutter_map` | Affichage carte OpenStreetMap |
+| `location` | Accès GPS de l'appareil |
+| `provider` | Gestion d'état |
+| `http` | Requêtes vers l'API Django |
+| `webview_flutter` | Affichage web embarqué |
