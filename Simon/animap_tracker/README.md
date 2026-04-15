@@ -1,6 +1,7 @@
 # Animap Tracker — Application mobile Flutter
 
 > Projet de fin d'étude — BTS CIEL (Cybersécurité, Informatique et réseaux, ELectronique)
+> Janvier 2025 — Juin 2025
 
 Application mobile de suivi GPS d'animaux en temps réel, développée avec Flutter. Elle constitue la partie interface utilisateur principale du projet Animap Tracker.
 

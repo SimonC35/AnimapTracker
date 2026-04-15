@@ -1,6 +1,7 @@
 # Animap Tracker — Système de suivi GPS d'animaux
 
 > Projet de fin d'étude — BTS CIEL (Cybersécurité, Informatique et réseaux, ELectronique)
+> Janvier 2025 — Juin 2025
 
 Projet collaboratif de suivi GPS d'animaux en temps réel, développé par 4 étudiants. Le système combine du matériel embarqué (collier GPS), une infrastructure cloud IoT (LoRaWAN / TTN), des backends REST, et plusieurs interfaces utilisateurs (application mobile Flutter et dashboard web Vue.js).
 
@@ -57,7 +58,7 @@ Projet collaboratif de suivi GPS d'animaux en temps réel, développé par 4 ét
 ## Structure du dépôt
 
 ```
-Projet_2024/
+AnimapTracker/
 ├── Fabien/                                  # Firmware embarqué
 │   ├── Animal-location-sending-GPS/         # Firmware principal (PlatformIO)
 │   │   ├── src/
@@ -337,5 +338,5 @@ Défini dans `Matts/Panimal/Panimal/settings.py` :
 |---|---|
 | **Simon** | Application mobile Flutter (iOS/Android), localisation multilingue |
 | **Mateo** | Visualisation carte Leaflet, serveur Express.js |
-| **Matts / Felix** | Backend Django, API REST, client MQTT, base PostGIS, frontend Vue.js |
+| **Matts** | Backend Django, API REST, client MQTT, base PostGIS, frontend Vue.js |
 | **Fabien** | Firmware embarqué Arduino/PlatformIO, intégration GPS + LoRaWAN |

@@ -1,6 +1,7 @@
 # Demo Test — Projet Animap Tracker
 
 > Projet de fin d'étude — BTS CIEL (Cybersécurité, Informatique et réseaux, ELectronique)
+> Janvier 2025 — Juin 2025
 
 Projet Flutter de test et de démonstration utilisé pour valider des fonctionnalités avant intégration dans l'application principale `animap_tracker`.
 
